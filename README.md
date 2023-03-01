@@ -19,9 +19,23 @@ TekTriage is a simple ticket submission website where users can post their compu
 
 ## Usage
 
-![screenShot]()
+1. To read a specific blog post, click on view post. This will take you to a page with the full post and any accompanying media or comments.
+
+2. If you'd like to leave a comment on a post, scroll down to the comment section at the bottom of the page and fill out the form with your name, email address, and comment.
+
+3. If you'd like to create your own blog post, you'll need to create an account. To do this, click on the "Sign Up" link in the navigation menu and fill out the registration form with your name, email address, and a password.
+
+4. Once you're logged in, click on the "New Post" link in the navigation menu to create a new blog post. You'll be prompted to enter a title, content, and any media you'd like to include.
+
+5. When you're finished creating your post, click the "Publish" button to make it live on the site. Your post will now be visible to other users and they can leave comments on it.
+
+6. You can also edit or delete your posts by clicking on the "My Posts" link in the navigation menu and selecting the post you'd like to edit or delete.
+
+![screenShot](./public/images/localhost_3001_.png)
 
 ## Credits
+
+Credits to my professor, instructors, classmates, and tutors for their invaluable support and guidance throughout my learning journey. Also to the developers of the various technologies used, including Google, documentation resources, and AI technologies that have provided valuable assistance and inspiration.
 
 ## License
 
@@ -50,9 +64,9 @@ SOFTWARE.
 
 ## Badges
 
-![HTML](https://img.shields.io/badge/HTML-NUMBER%25-orange)
-![CSS](https://img.shields.io/badge/CSS-NUMBER%25-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-NUMBER%25-yellow)
+![HTML](https://img.shields.io/badge/Handlebars-10.6%25-orange)
+![CSS](https://img.shields.io/badge/CSS-52.5%25-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-36.9%25-yellow)
 
 ## Features
 
