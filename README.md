@@ -14,7 +14,7 @@ TekTriage is a simple ticket submission website where users can post their compu
 ## Installation
 
 - [Project repo](https://github.com/shaynefw/TekTriage)
-- [Project deployed link](https://shaynefw.github.io/TekTriage/)
+- [Project deployed link](https://tektriage.herokuapp.com/)
 - [Project Video Demo]()
 
 ## Usage
