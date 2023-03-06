@@ -10,6 +10,11 @@ const postData = [
     title: 'Second Post',
     contents: 'This is the second post.',
     user_id: 2
+  },
+  {
+    title: 'Third Post',
+    contents: 'This is the third post.',
+    user_id: 3
   }
 ];
 

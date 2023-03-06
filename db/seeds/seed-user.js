@@ -8,6 +8,10 @@ const userData = [
   {
     username: 'tekuser2',
     password: 'password456'
+  },
+  {
+    username: 'tekuser3',
+    password: 'password789'
   }
 ];
 

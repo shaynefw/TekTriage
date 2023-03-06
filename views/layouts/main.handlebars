@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="brand">Blog</a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          {{#if loggedIn}}
+          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/logout">Logout</a></li>
+          {{else}}
+          <li><a href="/login">Login</a></li>
+          <li><a href="/signup">Sign Up</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{> body}}
+    </main>
+    <footer>
+      &copy; Tek Triage 2023
+    </footer>
+    <script src="./../../public/js/"></script>
+  </body>
+</html>
