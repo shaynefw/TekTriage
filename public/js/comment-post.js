@@ -1,6 +1,6 @@
 const post_id = window.location.pathname.split('/').pop();
 
-console.log(post_id)
+//console.log(post_id)
 const commentFormHandler = async (event) => {
     event.preventDefault();
     
@@ -14,7 +14,7 @@ const commentFormHandler = async (event) => {
             'Content-Type': 'application/json',
         },
         });
-        console.log(response)
+        //console.log(response)
     
         if (response.ok) {
         document.location.replace(`/post/${post_id}`);

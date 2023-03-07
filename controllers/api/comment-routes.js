@@ -11,6 +11,24 @@ router.get('/', async (req, res) => {
   }
 });
 
+//get comments by user id
+router.get('/:id', async (req, res) => {
+  try {
+    const commentData = await Comment.findAll({
+      where: { user_id: req.params.id }
+    });
+
+    if (!commentData) {
+      res.status(404).json({ message: 'No comment found with this id!' });
+      return;
+    }
+
+    res.status(200).json(commentData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 // CREATE new comment
 router.post('/', async (req, res) => {
