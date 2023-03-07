@@ -1,0 +1,19 @@
+<form class="edit-post-form">
+  <div class="form-group">
+    <label for="post-title">Title:</label>
+    <input type="text" class="form-control" id="post-title" name="title" value="{{post.title}}">
+  </div>
+  <div class="form-group">
+    <label for="post-contents">Contents:</label>
+    <textarea class="form-control" id="post-contents" name="contents" rows="3">{{post.contents}}</textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<script>
+  $(document).on('click', '#edit-post-btn', function() {
+  // Show the edit form
+  $('.edit-post-form').show();
+});
+
+</script>
