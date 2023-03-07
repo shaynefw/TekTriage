@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/dashboard">Dashboard</a>
         </li>
-        {{#if isAuthenticated}}
+        {{#if logged_in}}
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
+          <a class="nav-link" id="logout" href="/">Logout</a>
         </li>
         {{else}}
         <li class="nav-item">
@@ -50,6 +50,8 @@
       <p class="text-muted text-center">&copy; 2023 Blog Site</p>
     </div>
   </footer>
-
+  {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 </html>
