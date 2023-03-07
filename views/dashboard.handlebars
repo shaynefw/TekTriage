@@ -15,7 +15,7 @@
     <h3 class="card-title mb-4">My Replies</h3>
     <div class="list-group">
       {{#each comments}}
-      <a href="/post/{{Post.id}}" class="list-group-item list-group-item-action">{{content}} ({{createdAt}})</a>
+      <a href="/post/{{Post.id}}" class="list-group-item list-group-item-action">{{this.contents}}</a>
       {{/each}}
     </div>
   </div>

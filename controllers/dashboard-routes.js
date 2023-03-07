@@ -9,11 +9,17 @@ router.get('/', withAuth, async (req, res) => {
       where: { user_id: req.session.user_id },
       include: [{ model: User }]
     });
+    const commentData = await Comment.findAll({
+      where: { user_id: req.session.user_id },
+      include: [{ model: User }]
+    });
 
     const posts = postData.map((post) => post.get({ plain: true }));
+    const comments = commentData.map((comment) => comment.get({ plain: true }));
 
     res.render('dashboard', {
       posts,
+      comments,
       logged_in: true
     });
   } catch (err) {
