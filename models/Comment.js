@@ -48,6 +48,6 @@ Comment.init(
     underscored: true,
     modelName: 'comment'
   }
-);
+); // this is the name of the model that will be used in the routes
 
 module.exports = Comment;
