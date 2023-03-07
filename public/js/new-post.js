@@ -1,5 +1,3 @@
-// when user types title and content for new post and then clicks submit, the new post is saved to the database and the user is redirected to the dashboard
-
 const newpostFormHandler = async (event) => {
     event.preventDefault();
     

@@ -19,7 +19,7 @@
     {{else}}
     <p>No comments yet.</p>
     {{/if}}
-    {{#if isAuthenticated}}
+    {{#if logged_in}}
     <form action="/comment/{{post.id}}" method="POST">
       <div class="form-group">
         <label for="comment">Leave a comment:</label>
@@ -28,6 +28,6 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     {{else}}
-    <p>Please <a href="/signin">sign in</a> to leave a comment.</p>
+    <p>Please <a href="/signin">sign in</a> to leave a comment.</p> 
     {{/if}}
   </div>
