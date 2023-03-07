@@ -20,14 +20,16 @@
     <p>No comments yet.</p>
     {{/if}}
     {{#if logged_in}}
-    <form action="/comment/{{post.id}}" method="POST">
+    <form class="comment-form">
       <div class="form-group">
         <label for="comment">Leave a comment:</label>
-        <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+        <textarea class="form-control" id="comment-contents" name="comment" rows="3"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     {{else}}
-    <p>Please <a href="/signin">sign in</a> to leave a comment.</p> 
+    <p>Please <a href="/user/login">sign in</a> to leave a comment.</p> 
     {{/if}}
   </div>
+
+  <script src="/js/comment-post.js"></script>
