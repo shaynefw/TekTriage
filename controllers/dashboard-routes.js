@@ -43,7 +43,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
 });
 
 // RENDER new post page
-router.get('/new', withAuth, async (req, res) => {
+router.get('/new', async (req, res) => {
   res.render('new-post', {
     logged_in: true
   });
