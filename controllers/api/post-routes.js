@@ -58,6 +58,7 @@ router.delete('/:id', async (req, res) => {
 
     res.status(200).json(postData);
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
   }
 });

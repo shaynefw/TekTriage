@@ -29,7 +29,8 @@ Comment.init(
       references: {
         model: 'post',
         key: 'id'
-      }
+      },
+      onDelete: 'CASCADE' // if a post is deleted, all of its comments will be deleted as well
     },
     created_at: {
       type: DataTypes.DATE,
