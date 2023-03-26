@@ -31,7 +31,7 @@ TekTriage is a simple ticket submission website where users can post their compu
 
 6. You can also edit or delete your posts by clicking on the "My Posts" link in the navigation menu and selecting the post you'd like to edit or delete.
 
-![screenShot](./public/images/localhost_3001_.png)
+![screenShot](./public/images/ss.png)
 
 ## Credits
 
