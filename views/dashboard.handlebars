@@ -42,7 +42,7 @@
       <select class="form-control" id="comment-select" name="comment-select">
         <option value="" disabled selected> <--- Please Select ---> </option>
         {{#each comments}}
-          <option>{{this.contents}}</option>
+          <option value="{{this.id}}">{{this.contents}}</option>
         {{/each}}
       </select>
       <div class="mt-3">
@@ -51,22 +51,3 @@
     </div>
   </form>
 </div>
-
-<script>
-  const postSelect = document.getElementById('post-select');
-  const deletePostBtn = document.getElementById('delete-post-btn');
-  const editPostBtn = document.getElementById('edit-post-btn');
-  const commentSelect = document.getElementById('comment-select');
-  const deleteCommentBtn = document.getElementById('delete-comment-btn');
-
-  postSelect.addEventListener('change', function() {
-    deletePostBtn.classList.remove('d-none');
-    editPostBtn.classList.remove('d-none');
-  });
-
-  commentSelect.addEventListener('change', function() {
-    deleteCommentBtn.classList.remove('d-none');
-  });
-</script>
-
-
